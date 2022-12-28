@@ -46,6 +46,7 @@ router.post("/", async function(req, res){
 //crate product
 
 router.post("/", async function(req, res) {
+    console.debug(req.body);
     const productData = req.body;
 
     const styleids = [];
