@@ -13,7 +13,7 @@ router.get("/", async function(req, res){
             return;
         }
 
-        res.json({success: true, data: product,total:product.length});
+        res.json({success: true, total_product:product.length, data: product});
     });
 });
 

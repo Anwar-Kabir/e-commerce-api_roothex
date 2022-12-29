@@ -9,7 +9,7 @@ router.get("/", async function(req, res){
             return;
         }
 
-        res.json({success: true, data: categories});
+        res.json({success: true, total_categori: categories.length, data: categories,});
     });
 });
 

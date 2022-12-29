@@ -33,7 +33,8 @@ mongoose.connect(mongodbPath).then(function(){
     const orderRoutes = require('./routes/order_routes');
     app.use("/api/order", orderRoutes);
 
-    app.use((req,res,next)=>{
+    //server error handle
+    app.use((req,res,next)=>{ 
         res.status(404).json({message:"No route Found"})
     })
     

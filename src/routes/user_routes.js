@@ -104,7 +104,7 @@ router.get("/", async function(req, res){
             return;
         }
 
-        res.json({success: true, data: userlist});
+        res.json({success: true, total_user: userlist.length,data: userlist,});
     });
 });
 
